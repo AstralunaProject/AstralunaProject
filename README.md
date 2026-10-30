@@ -3,6 +3,8 @@
   <img src="assets/header-light.svg" alt="AstralunaProject: open source tools for developers building in Brazil" width="100%">
 </picture>
 
+<br>
+
 <img align="right" width="300" src="https://media1.tenor.com/m/FkELNdTE-l8AAAAd/frieren-sip-frieren.gif" alt="Frieren sipping tea while reading a book">
 
 ### Hi, I'm Overwind
