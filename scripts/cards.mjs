@@ -94,11 +94,11 @@ ${conteudo}
 
 function cardEstatisticas(d, t) {
   const numeros = [
-    [d.repositorios, "projetos públicos"],
-    [d.npm.length, "pacotes no npm"],
-    [d.prsExternos + d.issuesExternas, "contribuições externas"],
+    [d.repositorios, "public projects"],
+    [d.npm.length, "npm packages"],
+    [d.prsExternos + d.issuesExternas, "external contributions"],
   ];
-  if (d.estrelas >= 10) numeros.push([d.estrelas, "estrelas"]);
+  if (d.estrelas >= 10) numeros.push([d.estrelas, "stars"]);
   const largura = 495;
   const passo = (largura - 48) / numeros.length;
   let html = numeros
@@ -124,13 +124,13 @@ function cardEstatisticas(d, t) {
       return `<circle cx="${cx + 5}" cy="${cy - 4}" r="5" fill="${CORES_LINGUAGEM[nome] ?? t.suave}"/><text x="${cx + 16}" y="${cy}" class="r">${esc(nome)} ${((100 * n) / total).toFixed(1)}%</text>`;
     })
     .join("");
-  return moldura(t, largura, 210, "Estatísticas", "統計", html);
+  return moldura(t, largura, 210, "Stats", "統計", html);
 }
 
 function cardContribuicoes(d, t) {
   const largura = 495;
   const itens = d.contribuicoes.slice(0, 5);
-  const rotulo = (c) => (c.tipo === "issue" ? (c.estado === "aberto" ? "ISSUE" : "ISSUE ✓") : c.estado === "mergeado" ? "MERGEADO" : c.estado === "aberto" ? "PR ABERTO" : "PR FECHADO");
+  const rotulo = (c) => (c.tipo === "issue" ? (c.estado === "aberto" ? "ISSUE" : "CLOSED") : c.estado === "mergeado" ? "MERGED" : c.estado === "aberto" ? "OPEN PR" : "CLOSED");
   const cor = (c) => (c.estado === "mergeado" || (c.tipo === "issue" && c.estado !== "aberto") ? t.ok : c.estado === "aberto" ? t.aberto : t.suave);
   const html = itens.length
     ? itens
@@ -139,8 +139,8 @@ function cardContribuicoes(d, t) {
           return `<g class="l" style="animation-delay:${i * 0.12}s"><text x="24" y="${y}" class="s" fill="${cor(c)}">${rotulo(c)}</text><text x="112" y="${y}" class="x">${esc(cortar(c.titulo, 46))}</text><text x="112" y="${y + 18}" class="r">${esc(c.repo)}#${c.numero}</text></g>`;
         })
         .join("")
-    : `<text x="24" y="90" class="r">Nenhuma contribuição externa ainda.</text>`;
-  return moldura(t, largura, Math.max(120, 80 + itens.length * 44), "Contribuições em outros projetos", "貢献", html);
+    : `<text x="24" y="90" class="r">No external contributions yet.</text>`;
+  return moldura(t, largura, Math.max(120, 80 + itens.length * 44), "Open source contributions", "貢献", html);
 }
 
 const dados = FIXTURE ? JSON.parse(readFileSync(FIXTURE, "utf8")) : await coletar();

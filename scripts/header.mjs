@@ -69,7 +69,7 @@ function sakura(t) {
 
 function svg(nome) {
   const t = TEMAS[nome];
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="AstralunaProject: ferramentas open source para quem constrói software no Brasil">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="AstralunaProject: open source tools for developers building in Brazil">
 <defs>
   <linearGradient id="ceu" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0" stop-color="${t.ceu[0]}"/><stop offset=".55" stop-color="${t.ceu[1]}"/><stop offset="1" stop-color="${t.ceu[2]}"/>
@@ -106,8 +106,8 @@ function svg(nome) {
   <circle class="halo" cx="860" cy="92" r="90" fill="url(#halo)"/>
   <rect x="800" y="40" width="120" height="110" fill="${t.lua}" mask="url(#crescente)"/>
   <text x="64" y="96" class="titulo">AstralunaProject</text>
-  <text x="66" y="138" class="sub">Ferramentas open source para quem constrói software no Brasil</text>
-  <text x="66" y="182" class="tag">TYPESCRIPT · PYTHON · FISCAL · TRABALHISTA</text>
+  <text x="66" y="138" class="sub">Open source tools for developers building in Brazil</text>
+  <text x="66" y="182" class="tag">TYPESCRIPT · PYTHON · OPEN SOURCE</text>
   <text x="66" y="212" class="jp">星月プロジェクト · オープンソース</text>
   ${sakura(t)}
 </g>
