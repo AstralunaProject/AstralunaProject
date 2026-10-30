@@ -7,7 +7,7 @@
 
 <img align="right" width="280" hspace="20" src="https://media1.tenor.com/m/FkELNdTE-l8AAAAd/frieren-sip-frieren.gif" alt="Frieren sipping tea while reading a book">
 
-I write code for pretty much anything that compiles: games and game automation, Android stuff, web apps, backends and, apparently, Brazilian payroll law. Specialization is for people with fewer browser tabs open.
+I write code for pretty much anything that compiles: games, phones, consoles, browsers, servers and, apparently, Brazilian payroll law. Specialization is for people with fewer browser tabs open.
 
 If something annoys me twice, I automate it. If it annoys other people too, it becomes open source. Tests are mandatory; dependencies are on probation.
 
@@ -22,6 +22,10 @@ Powered by tea, lo-fi and "just one more episode".
 - **[open-servicedesk](https://github.com/AstralunaProject/open-servicedesk)** is an IT helpdesk for small companies: tickets, SLAs, email, knowledge base and asset inventory, on your own server.
 - **[calculadora-rescisao-clt](https://github.com/AstralunaProject/calculadora-rescisao-clt)** calculates CLT severance pay entirely in the browser, offline. [Open it](https://astralunaproject.github.io/calculadora-rescisao-clt/).
 - **[open-contrib](https://github.com/AstralunaProject/open-contrib)** is a GitHub Action that turns an issue into an onboarding roadmap for whoever picks it up.
+
+### Side quests
+
+My side projects have the attention span of a gacha player on banner day. Off the clock I break things in creative ways: games, emulators, the smart TV that really didn't need that update, my own sleep schedule. Most experiments die in a branch; the good ones end up here.
 
 
 <p>
