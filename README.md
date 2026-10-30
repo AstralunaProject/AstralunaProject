@@ -5,7 +5,7 @@
 
 ### こんにちは! I'm Overwind
 
-<img align="right" width="250" src="https://media1.tenor.com/m/FkELNdTE-l8AAAAd/frieren-sip-frieren.gif" alt="Frieren sipping tea while reading a book">
+<img align="right" width="280" src="https://media1.tenor.com/m/FkELNdTE-l8AAAAd/frieren-sip-frieren.gif" alt="Frieren sipping tea while reading a book">
 
 I write code for pretty much anything that compiles: games and game automation, Android stuff, web apps, backends and, apparently, Brazilian payroll law. Specialization is for people with fewer browser tabs open.
 
