@@ -3,7 +3,7 @@
   <img src="assets/header-light.svg" alt="AstralunaProject: open source tools for developers building in Brazil" width="100%">
 </picture>
 
-<img align="right" width="300" src="https://media1.tenor.com/m/FkELNdTE-l8AAAAC/frieren-sip-frieren.gif" alt="Frieren sipping tea while reading a book">
+<img align="right" width="300" src="https://media1.tenor.com/m/FkELNdTE-l8AAAAd/frieren-sip-frieren.gif" alt="Frieren sipping tea while reading a book">
 
 ### Hi, I'm Overwind
 
@@ -44,6 +44,6 @@ Usually found reading specs with a cup of tea.
 <table align="center">
   <tr>
     <td align="center"><img width="240" src="https://media1.tenor.com/m/aXVFqv8KInAAAAAC/anime-frieren.gif" alt="Frieren warming her hands by a fire"><br><sub>hot fix</sub></td>
-    <td align="center"><img width="240" src="https://media1.tenor.com/m/U9klqTVUqeIAAAAC/anime-frieren.gif" alt="Frieren shivering in the cold"><br><sub>cold start</sub></td>
+    <td align="center"><img width="240" src="https://media1.tenor.com/m/U9klqTVUqeIAAAAd/anime-frieren.gif" alt="Frieren shivering in the cold"><br><sub>cold start</sub></td>
   </tr>
 </table>
