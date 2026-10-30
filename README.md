@@ -23,9 +23,6 @@ Powered by tea, lo-fi and "just one more episode".
 - **[calculadora-rescisao-clt](https://github.com/AstralunaProject/calculadora-rescisao-clt)** calculates CLT severance pay entirely in the browser, offline. [Open it](https://astralunaproject.github.io/calculadora-rescisao-clt/).
 - **[open-contrib](https://github.com/AstralunaProject/open-contrib)** is a GitHub Action that turns an issue into an onboarding roadmap for whoever picks it up.
 
-### Side quests
-
-Most of my free time goes into game automation: PRs and bug reports for [MaaEnd](https://github.com/MaaEnd/MaaEnd) (Arknights: Endfield) and [BetterGI](https://github.com/babalae/better-genshin-impact) (Genshin Impact). The rest goes into fixing whatever I trip over, from [ComfyUI nodes](https://github.com/filliptm/ComfyUI_Fill-Nodes) to [osv-scalibr](https://github.com/google/osv-scalibr). Something of my own in games is next on the list.
 
 <p>
   <picture>
