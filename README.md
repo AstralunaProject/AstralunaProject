@@ -1,27 +1,31 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" alt="AstralunaProject: open source tools for developers building in Brazil" width="100%">
+  <img src="assets/header-light.svg" alt="AstralunaProject: games, tools, automation and whatever else compiles" width="100%">
 </picture>
 
 ### こんにちは! I'm Overwind
 
 <img align="right" width="250" src="https://media1.tenor.com/m/FkELNdTE-l8AAAAd/frieren-sip-frieren.gif" alt="Frieren sipping tea while reading a book">
 
-I build open source tools for the problems Brazilian developers actually run into: the new alphanumeric CNPJ, eSocial payroll events, CLT severance math, a self-hosted helpdesk for small companies.
+I write code for pretty much anything that compiles: games and game automation, Android stuff, web apps, backends and, apparently, Brazilian payroll law. Specialization is for people with fewer browser tabs open.
 
-I care about tools that do one thing well, ship with tests and docs, and don't drag in dependencies they don't need.
+If something annoys me twice, I automate it. If it annoys other people too, it becomes open source. Tests are mandatory; dependencies are on probation.
 
-Usually found reading specs with a cup of tea.
+Powered by tea, lo-fi and "just one more episode".
 
 <br clear="right">
 
-### What I'm building
+### Stuff I've shipped
 
 - **[cnpj-alfa-scan](https://github.com/AstralunaProject/cnpj-alfa-scan)** finds the code that will break with Brazil's alphanumeric CNPJ: `BIGINT` columns, `parseInt`, `\d{14}`, digit-only masks. CLI, GitHub Action and Semgrep rules. [Try it in the browser](https://astralunaproject.github.io/cnpj-alfa-scan/).
 - **[esocial-ts](https://github.com/AstralunaProject/esocial-ts)** builds, validates, signs and sends eSocial events from Node.js, with your A1 certificate staying on your machine.
 - **[open-servicedesk](https://github.com/AstralunaProject/open-servicedesk)** is an IT helpdesk for small companies: tickets, SLAs, email, knowledge base and asset inventory, on your own server.
 - **[calculadora-rescisao-clt](https://github.com/AstralunaProject/calculadora-rescisao-clt)** calculates CLT severance pay entirely in the browser, offline. [Open it](https://astralunaproject.github.io/calculadora-rescisao-clt/).
 - **[open-contrib](https://github.com/AstralunaProject/open-contrib)** is a GitHub Action that turns an issue into an onboarding roadmap for whoever picks it up.
+
+### Side quests
+
+Most of my free time goes into game automation: PRs and bug reports for [MaaEnd](https://github.com/MaaEnd/MaaEnd) (Arknights: Endfield) and [BetterGI](https://github.com/babalae/better-genshin-impact) (Genshin Impact). The rest goes into fixing whatever I trip over, from [ComfyUI nodes](https://github.com/filliptm/ComfyUI_Fill-Nodes) to [osv-scalibr](https://github.com/google/osv-scalibr). Something of my own in games is next on the list.
 
 <p>
   <picture>
