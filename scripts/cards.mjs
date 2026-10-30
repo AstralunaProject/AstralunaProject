@@ -92,55 +92,68 @@ ${conteudo}
 `;
 }
 
+const ALTURA = 300;
+
 function cardEstatisticas(d, t) {
-  const numeros = [
-    [d.repositorios, "public projects"],
-    [d.npm.length, "npm packages"],
-    [d.prsExternos + d.issuesExternas, "external contributions"],
-  ];
-  if (d.estrelas >= 10) numeros.push([d.estrelas, "stars"]);
   const largura = 495;
-  const passo = (largura - 48) / numeros.length;
-  let html = numeros
-    .map(([n, r], i) => `<g class="l" style="animation-delay:${i * 0.15}s"><text x="${24 + i * passo}" y="92" class="n">${n}</text><text x="${24 + i * passo}" y="112" class="r">${esc(r)}</text></g>`)
+  const linhas = [
+    [
+      [d.repositorios, "public projects"],
+      [d.npm.length, "npm packages"],
+      d.estrelas >= 10 ? [d.estrelas, "stars"] : [Object.keys(d.linguagens).length, "languages"],
+    ],
+    [
+      [d.prsMergeados, "merged PRs"],
+      [d.prsExternos, "opened PRs"],
+      [d.issuesExternas, "issues reported"],
+    ],
+  ];
+  const passo = (largura - 48) / 3;
+  let html = linhas
+    .flatMap((linha, l) =>
+      linha.map(
+        ([n, r], i) =>
+          `<g class="l" style="animation-delay:${(l * 3 + i) * 0.1}s"><text x="${24 + i * passo}" y="${92 + l * 66}" class="n">${n}</text><text x="${24 + i * passo}" y="${112 + l * 66}" class="r">${esc(r)}</text></g>`,
+      ),
+    )
     .join("");
 
   const total = Object.values(d.linguagens).reduce((a, b) => a + b, 0) || 1;
-  const top = Object.entries(d.linguagens).sort((a, b) => b[1] - a[1]).slice(0, 5);
+  const top = Object.entries(d.linguagens).sort((a, b) => b[1] - a[1]).slice(0, 6);
   let x = 24;
   const barra = top
     .map(([nome, n]) => {
       const w = Math.max(2, ((largura - 48) * n) / total);
-      const r = `<rect x="${x.toFixed(1)}" y="138" width="${w.toFixed(1)}" height="8" fill="${CORES_LINGUAGEM[nome] ?? t.suave}"/>`;
+      const r = `<rect x="${x.toFixed(1)}" y="214" width="${w.toFixed(1)}" height="8" fill="${CORES_LINGUAGEM[nome] ?? t.suave}"/>`;
       x += w;
       return r;
     })
     .join("");
-  html += `<clipPath id="b"><rect x="24" y="138" width="${largura - 48}" height="8" rx="4"/></clipPath><g clip-path="url(#b)">${barra}</g>`;
+  html += `<clipPath id="b"><rect x="24" y="214" width="${largura - 48}" height="8" rx="4"/></clipPath><g clip-path="url(#b)">${barra}</g>`;
   html += top
     .map(([nome, n], i) => {
-      const cx = 24 + (i % 3) * 150;
-      const cy = 170 + Math.floor(i / 3) * 20;
+      const cx = 24 + (i % 3) * passo;
+      const cy = 248 + Math.floor(i / 3) * 22;
       return `<circle cx="${cx + 5}" cy="${cy - 4}" r="5" fill="${CORES_LINGUAGEM[nome] ?? t.suave}"/><text x="${cx + 16}" y="${cy}" class="r">${esc(nome)} ${((100 * n) / total).toFixed(1)}%</text>`;
     })
     .join("");
-  return moldura(t, largura, 210, "Stats", "統計", html);
+  return moldura(t, largura, ALTURA, "Stats", "統計", html);
 }
 
 function cardContribuicoes(d, t) {
   const largura = 495;
   const itens = d.contribuicoes.slice(0, 5);
-  const rotulo = (c) => (c.tipo === "issue" ? (c.estado === "aberto" ? "ISSUE" : "CLOSED") : c.estado === "mergeado" ? "MERGED" : c.estado === "aberto" ? "OPEN PR" : "CLOSED");
+  const rotulo = (c) => (c.tipo === "issue" ? (c.estado === "aberto" ? "ISSUE" : "CLOSED") : c.estado === "mergeado" ? "MERGED" : c.estado === "aberto" ? "OPEN PR" : "PR CLOSED");
   const cor = (c) => (c.estado === "mergeado" || (c.tipo === "issue" && c.estado !== "aberto") ? t.ok : c.estado === "aberto" ? t.aberto : t.suave);
   const html = itens.length
     ? itens
         .map((c, i) => {
-          const y = 76 + i * 44;
+          const y = 84 + i * 44;
           return `<g class="l" style="animation-delay:${i * 0.12}s"><text x="24" y="${y}" class="s" fill="${cor(c)}">${rotulo(c)}</text><text x="112" y="${y}" class="x">${esc(cortar(c.titulo, 46))}</text><text x="112" y="${y + 18}" class="r">${esc(c.repo)}#${c.numero}</text></g>`;
         })
         .join("")
     : `<text x="24" y="90" class="r">No external contributions yet.</text>`;
-  return moldura(t, largura, Math.max(120, 80 + itens.length * 44), "Open source contributions", "貢献", html);
+  return moldura(t, largura, ALTURA, "Open source contributions", "貢献", html);
 }
 
 const dados = FIXTURE ? JSON.parse(readFileSync(FIXTURE, "utf8")) : await coletar();

@@ -36,7 +36,7 @@ Usually found reading specs with a cup of tea.
   </picture>
 </p>
 
-<img src="https://skillicons.dev/icons?i=ts,js,nodejs,python,flask,html,css,docker,git,linux&perline=10" alt="TypeScript, JavaScript, Node.js, Python, Flask, HTML, CSS, Docker, Git, Linux">
+<img src="https://skillicons.dev/icons?i=ts,js,nodejs,python,flask,html,css,docker,git,linux&perline=10" width="100%" alt="TypeScript, JavaScript, Node.js, Python, Flask, HTML, CSS, Docker, Git, Linux">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AstralunaProject/AstralunaProject/output/cobrinha-dark.svg">
