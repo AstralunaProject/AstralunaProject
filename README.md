@@ -13,10 +13,14 @@ If something annoys me twice, I automate it. If it annoys other people too, it b
 
 Powered by tea, lo-fi and "just one more episode".
 
+The tour with screenshots, falling petals and more Frieren: **[astralunaproject.github.io](https://astralunaproject.github.io/)**
+
 <br clear="right">
 
 ### Stuff I've shipped
 
+- **[nokudos](https://github.com/AstralunaProject/nokudos)** turns a Strava or Garmin data export into a year in review: route heatmap, totals, personal bests and a card to post. No subscription required, unlike some apps. [Open it](https://astralunaproject.github.io/nokudos/).
+- **[readrecap](https://github.com/AstralunaProject/readrecap)** is the same idea for Kobo and KOReader: books finished, hours read, streaks, and the uncomfortable number of books you started. [Open it](https://astralunaproject.github.io/readrecap/).
 - **[cnpj-alfa-scan](https://github.com/AstralunaProject/cnpj-alfa-scan)** finds the code that will break with Brazil's alphanumeric CNPJ: `BIGINT` columns, `parseInt`, `\d{14}`, digit-only masks. CLI, GitHub Action and Semgrep rules. [Try it in the browser](https://astralunaproject.github.io/cnpj-alfa-scan/).
 - **[esocial-ts](https://github.com/AstralunaProject/esocial-ts)** builds, validates, signs and sends eSocial events from Node.js, with your A1 certificate staying on your machine.
 - **[open-servicedesk](https://github.com/AstralunaProject/open-servicedesk)** is an IT helpdesk for small companies: tickets, SLAs, email, knowledge base and asset inventory, on your own server.
