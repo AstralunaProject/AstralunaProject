@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="300" viewBox="0 0 495 300" role="img" aria-label="Open source contributions">
+<style>
+  .t { font: 700 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #1f1846; }
+  .jp { font: 500 12px 'Yu Gothic', 'Hiragino Sans', 'Noto Sans JP', 'Noto Sans CJK JP', 'IPAGothic', sans-serif; fill: #7c76a8; letter-spacing: 2px; }
+  .n { font: 700 26px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #7a4fe0; }
+  .r { font: 400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #7c76a8; }
+  .x { font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif, 'Yu Gothic', 'Hiragino Sans', 'Noto Sans JP', 'Noto Sans CJK JP', 'IPAGothic', sans-serif; fill: #3b3566; }
+  .s { font: 600 11px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+  .l { animation: entra .8s ease-out both; }
+  @keyframes entra { from { opacity: 0; transform: translateX(-6px) } to { opacity: 1; transform: none } }
+  .gira { animation: gira 8s linear infinite; transform-origin: center; transform-box: fill-box; }
+  @keyframes gira { to { transform: rotate(360deg) } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect x=".5" y=".5" width="494" height="299" rx="14" fill="#fbf9ff" stroke="#e1dbfa"/>
+<g transform="translate(28 34)"><path class="gira" d="M0,-9 C5,-9 9,-4 7,3 C5,8 2,9 0,6 C-2,9 -5,8 -7,3 C-9,-4 -5,-9 0,-9 Z" fill="#f772a3"/></g>
+<text x="46" y="40" class="t">Open source contributions</text>
+<text x="471" y="40" class="jp" text-anchor="end">貢献</text>
+<g class="l" style="animation-delay:0s"><text x="24" y="84" class="s" fill="#a86b00">OPEN PR</text><text x="112" y="84" class="x">feat(CreditShopping): 新增每日刷新次数上限选项</text><text x="112" y="102" class="r">MaaEnd/MaaEnd#7133</text></g><g class="l" style="animation-delay:0.12s"><text x="24" y="128" class="s" fill="#1f8a4c">MERGED</text><text x="112" y="128" class="x">fix(metadata): skip pixel size for three-dimen…</text><text x="112" y="146" class="r">willmiao/ComfyUI-Lora-Manager#1170</text></g><g class="l" style="animation-delay:0.24s"><text x="24" y="172" class="s" fill="#a86b00">OPEN PR</text><text x="112" y="172" class="x">Skip melody notes shorter than the ABC subbeat…</text><text x="112" y="190" class="r">Comfy-Org/ComfyUI#17464</text></g><g class="l" style="animation-delay:0.36s"><text x="24" y="216" class="s" fill="#1f8a4c">CLOSED</text><text x="112" y="216" class="x">[bug] 自动秘境：TXT 战斗策略里 check 后面再接…</text><text x="112" y="234" class="r">babalae/better-genshin-impact#3826</text></g><g class="l" style="animation-delay:0.48s"><text x="24" y="260" class="s" fill="#1f8a4c">CLOSED</text><text x="112" y="260" class="x">场景导航遇到「以下到期理智药剂已自动使用」弹窗…</text><text x="112" y="278" class="r">MaaEnd/MaaEnd#6731</text></g>
+</svg>
