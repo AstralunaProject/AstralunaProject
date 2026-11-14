@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="300" viewBox="0 0 495 300" role="img" aria-label="Open source contributions">
+<style>
+  .t { font: 700 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f4f1ff; }
+  .jp { font: 500 12px 'Yu Gothic', 'Hiragino Sans', 'Noto Sans JP', 'Noto Sans CJK JP', 'IPAGothic', sans-serif; fill: #8f88c2; letter-spacing: 2px; }
+  .n { font: 700 26px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #c9a7ff; }
+  .r { font: 400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #8f88c2; }
+  .x { font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif, 'Yu Gothic', 'Hiragino Sans', 'Noto Sans JP', 'Noto Sans CJK JP', 'IPAGothic', sans-serif; fill: #d6d1f5; }
+  .s { font: 600 11px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+  .l { animation: entra .8s ease-out both; }
+  @keyframes entra { from { opacity: 0; transform: translateX(-6px) } to { opacity: 1; transform: none } }
+  .gira { animation: gira 8s linear infinite; transform-origin: center; transform-box: fill-box; }
+  @keyframes gira { to { transform: rotate(360deg) } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect x=".5" y=".5" width="494" height="299" rx="14" fill="#151030" stroke="#2e2566"/>
+<g transform="translate(28 34)"><path class="gira" d="M0,-9 C5,-9 9,-4 7,3 C5,8 2,9 0,6 C-2,9 -5,8 -7,3 C-9,-4 -5,-9 0,-9 Z" fill="#ff9ec4"/></g>
+<text x="46" y="40" class="t">Open source contributions</text>
+<text x="471" y="40" class="jp" text-anchor="end">貢献</text>
+<g class="l" style="animation-delay:0s"><text x="24" y="84" class="s" fill="#7bd88f">MERGED</text><text x="112" y="84" class="x">feat(CreditShopping): 新增每日刷新次数上限选项</text><text x="112" y="102" class="r">MaaEnd/MaaEnd#7133</text></g><g class="l" style="animation-delay:0.12s"><text x="24" y="128" class="s" fill="#ffcc66">ISSUE</text><text x="112" y="128" class="x">[Bug]: 货币战争 4.7 新羁绊「开拓银轨」弹出「开…</text><text x="112" y="146" class="r">moesnow/March7thAssistant#1341</text></g><g class="l" style="animation-delay:0.24s"><text x="24" y="172" class="s" fill="#7bd88f">MERGED</text><text x="112" y="172" class="x">fix(metadata): skip pixel size for three-dimen…</text><text x="112" y="190" class="r">willmiao/ComfyUI-Lora-Manager#1170</text></g><g class="l" style="animation-delay:0.36s"><text x="24" y="216" class="s" fill="#ffcc66">OPEN PR</text><text x="112" y="216" class="x">Skip melody notes shorter than the ABC subbeat…</text><text x="112" y="234" class="r">Comfy-Org/ComfyUI#17464</text></g><g class="l" style="animation-delay:0.48s"><text x="24" y="260" class="s" fill="#7bd88f">CLOSED</text><text x="112" y="260" class="x">[bug] 自动秘境：TXT 战斗策略里 check 后面再接…</text><text x="112" y="278" class="r">babalae/better-genshin-impact#3826</text></g>
+</svg>
